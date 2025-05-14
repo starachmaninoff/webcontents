@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>11week homework</title>
+        <style>
+            body { /* body: aliceblue색상 */
+                background : aliceblue; 
+            }
+            h1 { /* 글자색, 정렬하기 */
+                color : brown;
+                text-align : center;
+            }
+            .intro { /* 텍스트 : 휴먼편지체, 글자, 들여쓰기 1em */
+                font : 1em '휴먼편지체', sans-serif;
+                text-indent : 1em;
+            }
+            h2 { /* 목차 text-shadow */
+                color : #725BA1;
+                text-shadow : 2px 2px 5px #bfbbea;
+            }
+            .nav { /* 목차 밑줄 없애기 */
+                border-width : 1px;
+                border-style : dotted;
+                border-color : blue;
+            }
+            h3 { 
+                color : #725BA1;
+                text-shadow : 2px 2px 5px #bfbbea;
+            } 
+            div.orangeBox { /* 하단 설문조사, 푸터: 오렌지색 변경, 밑줄없애기 */
+                background : #F6BB43;
+                border-radius : 20px 20px;
+                padding : 15px;
+            }
+            table {
+                border-collapse : collapse;
+                margin : 0 auto;
+            }
+            th, td { /* 테이블: 글자색, 정렬하기 */
+                color : #0b041a;
+                text-align : center;
+                padding: 5px;
+                height: 15px;
+                width: 150px;
+            }
+            tbody tr :nth-child(odd) { /* 홀수행 배경색 */
+                background-color : #FFF5D7;
+
+            }
+            tbody tr:hover {
+                background : #FFCCE1;
+            }
+        </style>
+    </head>
+    <body>
+        <header> <!-- 나에 대해서 설명을 간단히 적은 후에 오디오 파일을 추가 -->
+            <h1>김은별</h1>
+            <hr>
+            <div class="intro">
+                <p>안녕하세요. 저는 2025년도에 입학한 컴퓨터공학과 1학년 김은별입니다.
+                <br>컴퓨터공학(Computer Engineering)을 공부하고 있으며, 예술을 아끼고 좋아합니다. 
+                <br>꿈 같은 하루 보내세요.
+                </p>
+            </div>
+            <br>
+            <audio controls> <!-- 내 녹음 파일 추가!! -->
+                <source src="media\3주차과제_audio태그녹음.mp3"type="audio/mp3">
+                <source src="media\3주차과제_audio태그녹음.ogg"type="audio/ogg">
+                <source src="media\3주차과제_audio태그녹음.wav"type="audio/wav">
+                <p>이 브라우저는 audio 요소를 지원하지 않습니다.</p>
+            </audio>
+        </header>
+        <br><br><br><br>
+    <nav> <!-- 목차. 관심분야, 취미활동, 강의시간표 -->
+        <h2>목차</h2>
+        <div class="nav">
+            <ul>
+                <li><a href="#interest" style="text-decoration:none;">관심 분야</a></li>
+                <li><a href="#hobby" style="text-decoration:none;">취미 활동</a></li>
+                <li><a href="#timetable" style="text-decoration:none;">강의 시간표</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <section>
+        <article> <!-- 관심분야 아티클 -->
+            <h3 id="interest"><span class="interesting">관심 분야</span></h3>
+            <hr>
+        <ul> <!-- 관심분야 리스트 -->
+            <li>Music
+                <ul>
+                    <li>클래식 음악(Classical Music): 러시아 작곡가 Rachmaninoff의 피아노 협주곡 2번을 가장 좋아합니다. </li>
+                    <li>밴드 음악(Band Music): 한국 밴드인 실리카겔의 음악을 자주 듣습니다.</li>
+                    <li>인디 음악(Indie Music): 떠오르는 인디 한로로의 ｢ 입춘 ｣을 매년 봄에 들어요.</li>
+                    <li>제이팝 음악(J-Pop Music): 일본 밴드인 radwimps의 ｢ me me she ｣는 마음을 울컥하게 만들어 주는 곡이에요.</li>
+                </ul>
+            </li><br>
+            <li>Lifestyle
+                <ul>
+                    <li>fashion: 최신 트렌드와 유행 패션을 찾아보는 것을 좋아합니다.</li>
+                    <li>beauty: 새로운 색조나 메이크업 방법을 찾아보며 참고해요.</li>
+                    <li>향수(Perfume): 시향하는 것도 좋아하는데 최근엔 Jo Malone의 "English Pear & Freesia"를 가장 좋아합니다.</li>
+                    <li>디저트(Dessert): 귀여운 디저트나 맛있는 디저트가 있는 카페를 종종 찾아봅니다.</li>
+                </ul>
+        
+            </li><br>
+            <li>Book Reading
+                <ul>
+                    <li>러시아 문학(Russian Literature): 러시아 작가 톨스토이의 ｢안나 카레니나｣를 읽었을 때, 러시아 문학에 빠졌습니다.</li>
+                    <li>소설(Novel): 한국 소설가 양귀자의 ｢모순｣을 가장 좋아합니다.</li>
+                    <li>일본 소설(Japanese Novel): 히가시노 게이고의 추리 소설을 좋아합니다.</li>
+                </ul>       
+            </li>
+        </ul> <!-- 관심분야 리스트 전체 닫기 -->
+        </article> <!-- 관심분야 아티클 닫기 -->
+        <br><br>
+        <article> <!-- 취미활동 아티클 -->
+            <div class="articleHobby">
+                <h3 id="hobby">취미 활동</h3>
+            </div>
+            <hr>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <th><img src="media\24랏도공연.jpg"alt="밴드 콘서트"width="300"height="300"></th>
+                        <th><img src="media\클래식콘서트.jpg"alt="클래식오케스트라 콘서트"width="300"height="300"></th>
+                        <th><img src="media\라흐23_5악보.jpg"alt="클래식 피아노 연습"width="300"height="300"></th>
+                    </tr>
+                    <tr>
+                        <th>밴드 콘서트 관람</th>
+                        <th>클래식 연주회 관람</th>
+                        <th>클래식 피아노 연습</th>
+                    </tr>
+                    <tr>
+                        <th><img src="media\진격거25영화.jpg"alt="애니메이션 영화 관람"width="300"height="300"></th>
+                        <th><img src="media\푸딩과칵테일.jpg"alt="푸딩과 칵테일"width="300"height="300"></th>
+                        <th><img src="media\라흐와모순책표지.jpeg"alt="모순 책 읽기기"width="300"height="300"></th>
+                    </tr>
+                    <tr>
+                        <th>영화 관람</th>
+                        <th>디저트 bar가기</th>
+                        <th>독서</th>
+                    </tr>
+                </tbody>
+            </table>
+    <br><br>
+        </article>
+        <article><!-- 강의 시간표 아티클 -->
+            <h3 id="timetable">강의 시간표(2025년 1학년 1학기)</h3>
+            <hr>    
+            <table border="1"width="480"height="500">
+                <tbody>
+                    <tr><!-- 시간표 구분 및 요일 -->
+                        <th></th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                    </tr>
+                    <tr>
+                        <th>10시</th>
+                        <td></td>
+                        <td rowspan="3">프로그래밍언어실습I<br>공603</td>
+                        <td></td>
+                        <td rowspan="3">컴퓨터과학개론<br>공507</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>11시</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>12시</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>13시</th>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2">SW개발문제해결능력<br>공609</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>14시</th>
+                        <td></td>
+                        <td rowspan="2">컴퓨팅사고력<br>공608</td>
+                        <td></td>
+                        <td>대인관계능력(원격)</td>
+                    </tr>
+                    <tr>
+                        <th>15시</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>16시</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>17시</th>
+                        <td></td>
+                        <td rowspan="2">버디업 멘토링</td>
+                        <td rowspan="2">튜터링<br>컴공학생회실</td>
+                        <td>MJC+ 학습동아리</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>18시</th>
+                        <td></td>
+                        <td>컴퓨터활용능력(원격)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>19시</th>
+                        <td></td>
+                        <td>생활일본어<br>(원격)</td>
+                        <td></td>
+                        <td></td>
+                        <td>문제해결능력<br>(원격)</td>
+                    </tr>
+                    <tr>
+                        <th>20시</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>21시</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>성경과삶<br>(원격)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section> <!-- 전체 섹션 닫기 -->
+    <br><hr><br><br>
+    <div class="orangeBox">
+        <span class="boxSurvey"><a href="https://starachmaninoff.github.io/webcontents/survey.html" target="_blank" style="text-decoration:none;">설문조사</a></span><br/>
+        <footer>
+            <p>2025년 5월 14일 수요일, 11week homework &nbsp;&nbsp;&nbsp; ©starachmaninoff </p>
+        </footer>
+    </div>
+    <br> <br>
+    </body>
+</html>
